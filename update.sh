@@ -12,4 +12,5 @@ sudo git config core.sparseCheckout true
 sudo git sparse-checkout set backend.exe
 sudo git pull origin main
 cd backend
-sudo pm2 start /bin/backend.exe
+sudo pm2 delete all
+sudo pm2 start bin/backend.exe
