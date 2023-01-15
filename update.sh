@@ -3,7 +3,6 @@ sudo rm -r /app
 sudo mkdir /app
 cd /app
 sudo apt update
-sudo apt install git
 sudo git init
 sudo git remote add -f origin https://github.com/AlanRubigati/projeto-universal.git
 sudo git config core.sparseCheckout true
