@@ -5,4 +5,4 @@ cd backend
 sudo dart pub get
 sudo rm bin/backend.exe --force
 sudo dart compile exe bin/backend.dart -o bin/backend.exe
-pm2 restart all --force
+sudo pm2 restart all --force
