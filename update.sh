@@ -2,10 +2,14 @@
 sudo rm -r /app
 sudo mkdir /app
 cd /app
-git init
-git config --global user.name "AlanRubigati"
-git config --global user.email "rubigati@hotmail.com"
-git remote add -f origin https://github.com/AlanRubigati/projeto-universal.git
-git config core.sparseCheckout true
-git sparse-checkout set backend.exe
-git pull origin main
+sudo apt update
+sudo apt install git
+sudo git init
+sudo git config --global user.name "AlanRubigati"
+sudo git config --global user.email "rubigati@hotmail.com"
+sudo git remote add -f origin https://github.com/AlanRubigati/projeto-universal.git
+sudo git config core.sparseCheckout true
+sudo git sparse-checkout set backend.exe
+sudo git pull origin main
+cd backend
+sudo pm2 start /bin/backend.exe
